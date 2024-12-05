@@ -4,6 +4,9 @@ Array.prototype.count = function() {
 Array.prototype.sum = function () {
   return this.reduce((x, y) => x + y, 0);
 };
+Iterator.prototype.sum = function () {
+  return this.reduce((x, y) => x + y, 0);
+};
 Array.prototype.transpose = function() {
   return this.reduce((acc, row) => row.map((n, i) => (acc[i] ?? []).concat(n)), []);
 };
